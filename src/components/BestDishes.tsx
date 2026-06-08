@@ -8,37 +8,37 @@ export const BestDishes = () => {
     {
       name: "MASALA DOSA",
       description: "Crispy rice crepe filled with spiced potato masala",
-      price: "$ 14.00 USD",
+      price: "$ 14.00 AUD",
       image: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Dosa_at_Sri_Ganesha_Restauran%2C_Bangkok_%2844570742744%29.jpg"
     },
     {
       name: "IDLI SAMBAR",
       description: "Soft steamed rice cakes submerged in a flavorful lentil stew",
-      price: "$ 12.00 USD",
+      price: "$ 12.00 AUD",
       image: "https://upload.wikimedia.org/wikipedia/commons/1/11/Idli_Sambar.JPG"
     },
     {
       name: "MUTTON BIRYANI",
       description: "Slow-cooked mutton with fragrant rice and saffron",
-      price: "$ 22.00 USD",
+      price: "$ 22.00 AUD",
       image: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&q=80&w=200"
     },
     {
       name: "MEDU VADA",
       description: "Crispy savory lentil donuts served with coconut chutney",
-      price: "$ 10.00 USD",
+      price: "$ 10.00 AUD",
       image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&q=80&w=200"
     },
     {
       name: "SOUTH INDIAN THALI",
       description: "A grand platter featuring rice, curries, papad, and pickle",
-      price: "$ 26.00 USD",
+      price: "$ 26.00 AUD",
       image: "https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?auto=format&fit=crop&q=80&w=200"
     },
     {
       name: "CHICKEN DUM BIRYANI",
       description: "Aromatic basmati rice cooked with tender marinated chicken",
-      price: "$ 18.00 USD",
+      price: "$ 18.00 AUD",
       image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&q=80&w=200"
     }
   ];

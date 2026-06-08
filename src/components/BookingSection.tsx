@@ -3,7 +3,7 @@ import { FadeIn } from "./ui/FadeIn";
 
 export const BookingSection = () => {
   return (
-    <section className="bg-white w-full py-16 overflow-hidden">
+    <section className="bg-transparent w-full py-16 overflow-hidden">
       <div className="max-w-[1200px] mx-auto w-full flex flex-col md:flex-row shadow-2xl">
         
         {/* Left Side - Booking Form */}
@@ -98,7 +98,7 @@ export const BookingSection = () => {
         </div>
 
         {/* Right Side - Info */}
-        <div className="w-full md:w-1/2 bg-white flex flex-col items-center justify-center py-16 px-10 md:px-14 min-h-[600px]">
+        <div className="w-full md:w-1/2 bg-transparent flex flex-col items-center justify-center py-16 px-10 md:px-14 min-h-[600px]">
           <FadeIn direction="left" delay={0.2} duration={0.8}>
             {/* Top Image */}
             <div className="w-full max-w-[420px] h-[220px] mb-14 overflow-hidden">

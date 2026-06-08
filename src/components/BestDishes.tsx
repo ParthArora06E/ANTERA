@@ -44,7 +44,7 @@ export const BestDishes = () => {
   ];
 
   return (
-    <section className="bg-white w-full py-28 overflow-hidden">
+    <section className="bg-transparent w-full py-28 overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-6 md:px-10">
         
         {/* Header */}

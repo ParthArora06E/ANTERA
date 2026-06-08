@@ -3,7 +3,7 @@ import { FadeIn } from "./ui/FadeIn";
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="bg-white w-full py-24 md:py-32 overflow-hidden">
+    <section id="about" className="bg-transparent w-full py-24 md:py-32 overflow-hidden">
       <div className="max-w-[1200px] mx-auto px-6 md:px-10">
         
         <div className="flex flex-col lg:flex-row items-stretch gap-10 lg:gap-12 xl:gap-16 mb-24">

@@ -31,7 +31,7 @@ export default function Home() {
       </FadeIn>
       
 
-      <div className="bg-white border-t border-[var(--color-brand-gold-soft)]/20">
+      <div className="bg-transparent border-t border-[var(--color-brand-gold-soft)]/20">
         <FadeIn delay={0.1}>
           <SushiDealsBanner />
         </FadeIn>
@@ -47,7 +47,7 @@ export default function Home() {
       <Footer />
       
       {/* Mobile Sticky Bottom Order Bar */}
-      <div className="lg:hidden fixed bottom-0 inset-x-0 bg-white border-t border-[var(--color-brand-gold-soft)]/30 shadow-[0_-10px_20px_rgba(0,0,0,0.05)] z-50 flex items-center justify-between px-4 py-3 pb-safe">
+      <div className="lg:hidden fixed bottom-0 inset-x-0 bg-[var(--color-brand-cream-bg)] border-t border-[var(--color-brand-gold-soft)]/30 shadow-[0_-10px_20px_rgba(0,0,0,0.05)] z-50 flex items-center justify-between px-4 py-3 pb-safe">
         <div className="flex gap-4">
           <button className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-brand-text-brown)] hover:text-[var(--color-brand-maroon-royal)] flex flex-col items-center">
             <span className="w-5 h-5 flex items-center justify-center mb-1 text-[16px]">📋</span>

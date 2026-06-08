@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Hero = () => {
   return (
@@ -25,19 +26,19 @@ export const Hero = () => {
 
       {/* Transparent Overlay Header matching exactly to the screenshot */}
       <header className="absolute top-0 inset-x-0 z-50 flex items-center justify-between px-6 lg:px-16 py-6 text-white bg-transparent">
-        <div className="flex items-center gap-[2px] cursor-pointer" onClick={(e) => { e.preventDefault(); document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' }); }}>
+        <Link href="#home" className="flex items-center gap-[2px] cursor-pointer">
           <img src="/logo.png" alt="Antera Logo" className="h-24 md:h-32 lg:h-40 w-auto object-contain" />
-        </div>
+        </Link>
         
         <nav className="hidden lg:flex items-center gap-8 text-[11px] font-bold tracking-widest uppercase text-white/90">
-          <a href="#home" onClick={(e) => { e.preventDefault(); document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' }); }} className="hover:text-white transition-colors relative group">
+          <Link href="#home" className="hover:text-white transition-colors relative group">
             HOME
             <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-white"></span>
-          </a>
-          <a href="#about" onClick={(e) => { e.preventDefault(); document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' }); }} className="hover:text-white transition-colors">ABOUT</a>
-          <a href="#menu" onClick={(e) => { e.preventDefault(); document.getElementById('menu')?.scrollIntoView({ behavior: 'smooth' }); }} className="hover:text-white transition-colors">MENU</a>
-          <a href="#gallery" onClick={(e) => { e.preventDefault(); document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' }); }} className="hover:text-white transition-colors">GALLERY</a>
-          <a href="#contact" onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }} className="hover:text-white transition-colors">CONTACT</a>
+          </Link>
+          <Link href="#about" className="hover:text-white transition-colors">ABOUT</Link>
+          <Link href="#menu" className="hover:text-white transition-colors">MENU</Link>
+          <Link href="#gallery" className="hover:text-white transition-colors">GALLERY</Link>
+          <Link href="#contact" className="hover:text-white transition-colors">CONTACT</Link>
         </nav>
       </header>
 

@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-cream-bg: #F8EEDB;
+  --color-brand-cream-card: #FFF6E7;
+  --color-brand-maroon-deep: #7A1712;
+  --color-brand-maroon-royal: #941F17;
+  --color-brand-navy: #071827;
+  --color-brand-gold-royal: #C8952E;
+  --color-brand-gold-soft: #E2B85D;
+  --color-brand-text-dark: #24150D;
+  --color-brand-text-muted: #6B5641;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--color-brand-cream-bg);
+    color: var(--color-brand-text-dark);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Subtle premium food/mandala pattern overlay for rich feel */
+    background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+    background-attachment: fixed;
+    background-color: var(--color-brand-cream-bg);
+  }
+
+  @media (max-width: 768px) {
+    body {
+      font-size: 15px;
+      line-height: 1.55;
+    }
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    color: var(--color-brand-maroon-royal);
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-[1200px] mx-auto px-5 md:px-8 py-12 md:py-[72px];
+  }
+
+  .section-compact {
+    @apply max-w-[1200px] mx-auto px-5 md:px-8 py-10 md:py-16;
+  }
+
+  .premium-card {
+    @apply bg-white/90 backdrop-blur-sm rounded-[16px] border border-[var(--color-brand-gold-soft)]/40 shadow-sm hover:shadow-md hover:border-[var(--color-brand-gold-royal)] transition-all duration-300 hover:-translate-y-1 overflow-hidden relative flex flex-col;
+  }
+
+  .premium-card-pad {
+    @apply p-5 md:p-6 flex flex-col flex-grow;
+  }
+  
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-[var(--color-brand-maroon-deep)] text-[var(--color-brand-cream-bg)] px-[24px] h-[48px] rounded-[10px] font-bold text-[14px] hover:bg-[var(--color-brand-maroon-royal)] shadow-md shadow-[var(--color-brand-maroon-deep)]/20 transition-all duration-300 transform active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 bg-[var(--color-brand-gold-royal)] text-[var(--color-brand-text-dark)] px-[24px] h-[48px] rounded-[10px] font-bold text-[14px] hover:bg-[var(--color-brand-gold-soft)] shadow-md shadow-[var(--color-brand-gold-royal)]/20 transition-all duration-300 transform active:scale-95;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 bg-[var(--color-brand-cream-bg)] border-[1.5px] border-[var(--color-brand-maroon-royal)] text-[var(--color-brand-maroon-royal)] px-[24px] h-[48px] rounded-[10px] font-bold text-[14px] hover:bg-[var(--color-brand-maroon-royal)] hover:text-[var(--color-brand-cream-bg)] transition-all duration-300 transform active:scale-95;
+  }
+
+  .btn-add {
+    @apply w-[40px] h-[40px] rounded-[9px] bg-white border border-[var(--color-brand-gold-soft)]/50 text-[var(--color-brand-maroon-royal)] flex items-center justify-center hover:bg-[var(--color-brand-maroon-royal)] hover:text-white transition-colors hover:border-[var(--color-brand-maroon-royal)] shadow-sm;
+  }
+
+  .badge-premium {
+    @apply absolute top-4 left-4 bg-[var(--color-brand-maroon-deep)] text-white text-[11px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full shadow-md z-10;
+  }
+}

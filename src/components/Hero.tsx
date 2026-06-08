@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { FadeIn } from "@/components/ui/FadeIn";
+
 export const Hero = () => {
   return (
     <section id="home" className="relative flex items-center justify-center w-full h-screen min-h-[600px] bg-[#000] overflow-hidden">
@@ -44,10 +46,12 @@ export const Hero = () => {
 
       {/* Hero Content */}
       <div className="relative z-20 flex flex-col items-center text-center px-4 w-full max-w-5xl">
-        <h1 className="font-serif text-[42px] sm:text-[56px] md:text-[72px] lg:text-[90px] leading-[1.1] text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)]">
-          FRESH, FLAVORFUL, <br className="hidden sm:block" />
-          AUTHENTIC
-        </h1>
+        <FadeIn delay={0.2} duration={1.2}>
+          <h1 className="font-serif text-[42px] sm:text-[56px] md:text-[72px] lg:text-[90px] leading-[1.1] text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)]">
+            FRESH, FLAVORFUL, <br className="hidden sm:block" />
+            AUTHENTIC
+          </h1>
+        </FadeIn>
       </div>
     </section>
   );

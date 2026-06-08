@@ -9,25 +9,23 @@ interface SectionHeadingProps {
 
 const Flourish = ({ className = "" }: { className?: string }) => (
   <svg 
-    className={`hidden sm:block w-20 md:w-28 lg:w-36 text-[#C8952E] ${className}`} 
+    className={`hidden sm:block w-16 md:w-24 lg:w-32 text-[#C8952E] ${className}`} 
     viewBox="0 0 100 15" 
     fill="currentColor" 
     xmlns="http://www.w3.org/2000/svg"
-    style={{ filter: "drop-shadow(0px 2px 4px rgba(200,149,46,0.3))" }}
   >
-    {/* Straighter, thicker line */}
-    <rect x="0" y="6.75" width="45" height="1.5" />
-    {/* Sharper First diamond */}
-    <path d="M54 7.5L58 3.5L62 7.5L58 11.5Z" />
-    {/* Thicker Center circle ring */}
-    <path fillRule="evenodd" clipRule="evenodd" d="M72 13C68.9624 13 66.5 10.5376 66.5 7.5C66.5 4.46243 68.9624 2 72 2C75.0376 2 77.5 4.46243 77.5 7.5C77.5 10.5376 75.0376 13 72 13ZM72 10.5C73.6569 10.5 75 9.15685 75 7.5C75 5.84315 73.6569 4.5 72 4.5C70.3431 4.5 69 5.84315 69 7.5C69 9.15685 70.3431 10.5 72 10.5Z" />
-    {/* Prominent Inner dot */}
-    <circle cx="72" cy="7.5" r="1.5" />
-    {/* Second diamond */}
-    <path d="M82 7.5L86 3.5L90 7.5L86 11.5Z" />
-    {/* Final dots */}
-    <circle cx="96" cy="7.5" r="2" />
-    <circle cx="100" cy="7.5" r="1" />
+    {/* Crisp straight line */}
+    <rect x="0" y="7" width="40" height="1" />
+    
+    {/* Central elegant star/diamond shape */}
+    <path d="M50 0L52.5 5.5L58 7.5L52.5 9.5L50 15L47.5 9.5L42 7.5L47.5 5.5L50 0Z" />
+    
+    {/* Two crisp dots */}
+    <circle cx="68" cy="7.5" r="1.5" />
+    <circle cx="76" cy="7.5" r="1.5" />
+    
+    {/* End line */}
+    <rect x="84" y="7" width="16" height="1" />
   </svg>
 );
 

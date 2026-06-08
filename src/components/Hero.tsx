@@ -42,7 +42,13 @@ export const Hero = () => {
         </nav>
       </header>
 
-      {/* The text has been removed so it doesn't overlap with the text already in the background images */}
+      {/* Hero Content */}
+      <div className="relative z-20 flex flex-col items-center text-center px-4 w-full max-w-5xl">
+        <h1 className="font-serif text-[42px] sm:text-[56px] md:text-[72px] lg:text-[90px] leading-[1.1] text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.6)]">
+          FRESH, FLAVORFUL, <br className="hidden sm:block" />
+          AUTHENTIC
+        </h1>
+      </div>
     </section>
   );
 };

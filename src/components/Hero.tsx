@@ -57,7 +57,7 @@ export const Hero = () => {
       {/* Floating Circular Menu Button (also covers video watermark) */}
       <Link 
         href="#menu" 
-        className="absolute bottom-4 right-10 md:bottom-8 md:right-16 z-40 flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-[var(--color-brand-maroon-royal)] border border-[var(--color-brand-gold-soft)] rounded-full text-[var(--color-brand-gold-soft)] font-bold tracking-widest text-[10px] md:text-[12px] uppercase shadow-[0_8px_24px_rgba(0,0,0,0.6)] hover:bg-[var(--color-brand-gold-soft)] hover:text-[var(--color-brand-maroon-royal)] transition-all hover:scale-105 duration-300"
+        className="absolute bottom-4 right-20 md:bottom-8 md:right-28 z-40 flex items-center justify-center w-20 h-20 md:w-24 md:h-24 bg-[var(--color-brand-maroon-royal)] border border-[var(--color-brand-gold-soft)] rounded-full text-[var(--color-brand-gold-soft)] font-bold tracking-widest text-[10px] md:text-[12px] uppercase shadow-[0_8px_24px_rgba(0,0,0,0.6)] hover:bg-[var(--color-brand-gold-soft)] hover:text-[var(--color-brand-maroon-royal)] transition-all hover:scale-105 duration-300"
       >
         MENU
       </Link>

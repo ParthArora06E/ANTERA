@@ -11,12 +11,10 @@ import { SushiDealsBanner } from "@/components/SushiDealsBanner";
 import { Footer } from "@/components/Footer";
 import { BookingSection } from "@/components/BookingSection";
 import { FadeIn } from "@/components/ui/FadeIn";
-import { Preloader } from "@/components/Preloader";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[var(--color-brand-cream-bg)] relative">
-      <Preloader />
       <CartDrawer />
 
 

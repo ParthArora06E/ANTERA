@@ -3,7 +3,7 @@ import { FadeIn } from "./ui/FadeIn";
 
 export const BookingSection = () => {
   return (
-    <section className="bg-transparent w-full py-16 overflow-hidden">
+    <section id="booking" className="bg-transparent w-full py-16 overflow-hidden">
       <div className="max-w-[1200px] mx-auto w-full flex flex-col md:flex-row shadow-2xl">
         
         {/* Left Side - Booking Form */}

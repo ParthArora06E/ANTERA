@@ -24,7 +24,7 @@ export const FoodGallery = () => {
   const images = [...originalImages, ...originalImages];
 
   return (
-    <section className="w-full pb-16 overflow-hidden bg-transparent relative">
+    <section id="gallery" className="w-full pb-16 overflow-hidden bg-transparent relative">
       <style>{`
         @keyframes marquee {
           0% { transform: translateX(0%); }

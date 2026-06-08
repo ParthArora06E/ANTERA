@@ -35,8 +35,9 @@ export const Hero = () => {
             <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-white"></span>
           </a>
           <a href="#about" className="hover:text-white transition-colors">ABOUT</a>
-          <a href="#pages" className="hover:text-white transition-colors">PAGES</a>
           <a href="#menu" className="hover:text-white transition-colors">MENU</a>
+          <a href="#gallery" className="hover:text-white transition-colors">GALLERY</a>
+          <a href="#booking" className="hover:text-white transition-colors">BOOKING</a>
           <a href="#contact" className="hover:text-white transition-colors">CONTACT</a>
         </nav>
       </header>

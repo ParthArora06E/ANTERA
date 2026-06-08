@@ -186,7 +186,7 @@ export const FoodsWeServe = () => {
   }, [paginatedItems]); // Re-run animation when items change
 
   return (
-    <section ref={sectionRef} className="bg-transparent w-full py-24 md:py-32 relative overflow-hidden">
+    <section id="menu" ref={sectionRef} className="bg-transparent w-full py-24 md:py-32 relative overflow-hidden">
       
       {/* Decorative Background Element */}
       <div className="absolute -top-20 -right-20 w-96 h-96 bg-[var(--color-brand-gold-soft)] opacity-20 rounded-full blur-3xl pointer-events-none"></div>

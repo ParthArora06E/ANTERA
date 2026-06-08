@@ -13,7 +13,7 @@ const menuItems = [
   {
     title: "Chicken Dum Biryani",
     category: "Signature",
-    price: "$1 AUD",
+    price: "$18 AUD",
     rating: 4.9,
     description: "Aromatic basmati rice cooked with tender marinated chicken and secret Antera spices.",
     image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&q=80&w=600",
@@ -21,7 +21,7 @@ const menuItems = [
   {
     title: "Mutton Biryani",
     category: "Signature",
-    price: "$1 AUD",
+    price: "$22 AUD",
     rating: 4.8,
     description: "Slow-cooked mutton with fragrant rice, saffron, and caramelized onions.",
     image: "https://images.unsplash.com/photo-1631515243349-e0cb75fb8d3a?auto=format&fit=crop&q=80&w=600",
@@ -29,7 +29,7 @@ const menuItems = [
   {
     title: "Masala Dosa",
     category: "Classic",
-    price: "$1 AUD",
+    price: "$14 AUD",
     rating: 4.7,
     description: "Crispy rice crepe filled with spiced potato masala, served with chutneys.",
     image: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Dosa_at_Sri_Ganesha_Restauran%2C_Bangkok_%2844570742744%29.jpg",
@@ -37,7 +37,7 @@ const menuItems = [
   {
     title: "Idli Sambar",
     category: "Breakfast",
-    price: "$1 AUD",
+    price: "$12 AUD",
     rating: 4.6,
     description: "Soft steamed rice cakes submerged in a piping hot, flavorful lentil stew.",
     image: "https://upload.wikimedia.org/wikipedia/commons/1/11/Idli_Sambar.JPG",
@@ -45,7 +45,7 @@ const menuItems = [
   {
     title: "South Indian Thali",
     category: "Feast",
-    price: "$1 AUD",
+    price: "$26 AUD",
     rating: 4.9,
     description: "A grand platter featuring rice, curries, papad, pickle, and authentic desserts.",
     image: "https://plus.unsplash.com/premium_photo-1723928494246-0c38f1bdf204?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8c291dGglMjBpbmRpYW4lMjBtZWFsc3xlbnwwfHx8fDE3ODA4OTM0Mjh8MA&ixlib=rb-4.1.0&q=80&w=600",
@@ -53,7 +53,7 @@ const menuItems = [
   {
     title: "Filter Coffee",
     category: "Beverage",
-    price: "$1 AUD",
+    price: "$5 AUD",
     rating: 4.8,
     description: "Authentic Madras filter coffee brewed strong and served frothy.",
     image: "https://plus.unsplash.com/premium_photo-1674931348670-68936350ed55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8MXx8ZmlsdGVyJTIwY29mZmVlfGVufDB8fHx8MTc4MDg5MzQyOHww&ixlib=rb-4.1.0&q=80&w=600",
@@ -61,7 +61,7 @@ const menuItems = [
   {
     title: "Mango Lassi",
     category: "Beverage",
-    price: "$1 AUD",
+    price: "$6 AUD",
     rating: 4.7,
     description: "Rich and creamy yogurt drink blended with sweet Alphonso mangoes.",
     image: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Salt_lassi.jpg",
@@ -69,7 +69,7 @@ const menuItems = [
   {
     title: "Sweet Gulab Jamun",
     category: "Dessert",
-    price: "$1 AUD",
+    price: "$8 AUD",
     rating: 4.9,
     description: "Soft, melt-in-your-mouth milk dumplings soaked in fragrant rose syrup.",
     image: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Bowl_of_Gulab_Jamuns.jpg",
@@ -77,7 +77,7 @@ const menuItems = [
   {
     title: "Crispy Medu Vada",
     category: "Breakfast",
-    price: "$1 AUD",
+    price: "$10 AUD",
     rating: 4.8,
     description: "Deep-fried lentil donuts, crispy on the outside and soft inside.",
     image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&q=80&w=600",
@@ -85,7 +85,7 @@ const menuItems = [
   {
     title: "Onion Samosa",
     category: "Classic",
-    price: "$1 AUD",
+    price: "$7 AUD",
     rating: 4.6,
     description: "Crispy pastry filled with spiced caramelized onions and herbs.",
     image: "https://images.unsplash.com/photo-1572099107898-46f22b3af4f9?auto=format&fit=crop&q=80&w=600",
@@ -93,7 +93,7 @@ const menuItems = [
   {
     title: "Onion Pakoda",
     category: "Classic",
-    price: "$1 AUD",
+    price: "$8 AUD",
     rating: 4.5,
     description: "Golden fried onion fritters seasoned with carom seeds and curry leaves.",
     image: "https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&q=80&w=600",
@@ -101,7 +101,7 @@ const menuItems = [
   {
     title: "Masala Chai",
     category: "Beverage",
-    price: "$1 AUD",
+    price: "$4 AUD",
     rating: 4.9,
     description: "Traditional Indian tea brewed with aromatic spices and milk.",
     image: "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?auto=format&fit=crop&q=80&w=600",
@@ -109,7 +109,7 @@ const menuItems = [
   {
     title: "Paneer Tikka",
     category: "Signature",
-    price: "$1 AUD",
+    price: "$16 AUD",
     rating: 4.7,
     description: "Cubes of paneer marinated in spices and grilled in a tandoor.",
     image: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&q=80&w=600",
@@ -117,7 +117,7 @@ const menuItems = [
   {
     title: "Chicken 65",
     category: "Signature",
-    price: "$1 AUD",
+    price: "$15 AUD",
     rating: 4.8,
     description: "Spicy, deep-fried chicken bites tossed with curry leaves and chilies.",
     image: "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&q=80&w=600",
@@ -125,7 +125,7 @@ const menuItems = [
   {
     title: "Special Pulao",
     category: "Signature",
-    price: "$1 AUD",
+    price: "$18 AUD",
     rating: 4.6,
     description: "Fragrant basmati rice cooked with mixed vegetables and mild spices.",
     image: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&q=80&w=600",
@@ -133,7 +133,7 @@ const menuItems = [
   {
     title: "Rasmalai",
     category: "Dessert",
-    price: "$1 AUD",
+    price: "$9 AUD",
     rating: 4.9,
     description: "Soft cheese patties soaked in sweet, saffron-infused milk.",
     image: "https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?auto=format&fit=crop&q=80&w=600",

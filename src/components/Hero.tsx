@@ -2,23 +2,18 @@
 
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 
 export const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const bgImages = [
     { 
-      src: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&q=80&w=2400", 
-      align: "object-right" 
+      src: "/images/hero-bg-1.jpeg", 
+      align: "object-center" 
     },
     { 
-      src: "https://images.pexels.com/photos/32825917/pexels-photo-32825917.jpeg?auto=compress&cs=tinysrgb&w=2400", 
-      align: "object-[85%_center]" 
-    },
-    { 
-      src: "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&q=80&w=2400", 
-      align: "object-right" 
+      src: "/images/hero-bg-2.jpeg", 
+      align: "object-center" 
     }
   ];
 
@@ -30,10 +25,10 @@ export const Hero = () => {
   }, [bgImages.length]);
 
   return (
-    <section id="home" className="relative flex items-center h-[90vh] min-h-[600px] max-h-[800px] bg-[var(--color-brand-cream-bg)] overflow-hidden">
+    <section id="home" className="relative flex items-center justify-center w-full h-screen min-h-[600px] bg-[#000] overflow-hidden">
       
       {/* Dynamic Full-width Background Image Slideshow */}
-      <div className="absolute inset-0 w-full h-full bg-[#1A0A08]">
+      <div className="absolute inset-0 w-full h-full bg-black">
         {bgImages.map((img, index) => (
           <div 
             key={img.src}
@@ -41,79 +36,37 @@ export const Hero = () => {
           >
             <Image
               src={img.src}
-              alt={`Premium Hyderabadi Food Scene ${index + 1}`}
+              alt={`Hero Background ${index + 1}`}
               fill
-              className={`object-cover ${img.align}`} 
+              className={`object-cover ${img.align} transform transition-transform duration-[8000ms] ease-out ${index === currentImageIndex ? 'scale-105' : 'scale-100'}`} 
               priority={index === 0}
             />
           </div>
         ))}
         
-        {/* Constant overlay gradient keeping left text perfectly readable */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-brand-cream-bg)] via-[var(--color-brand-cream-bg)] via-[50%] to-transparent w-full z-10 pointer-events-none"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-brand-cream-bg)]/30 via-transparent to-transparent z-10 pointer-events-none"></div>
+        {/* Subtle top gradient to ensure the white header text is always readable */}
+        <div className="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-black/70 via-black/30 to-transparent z-10 pointer-events-none"></div>
       </div>
 
-      <div className="section-container relative z-20 w-full flex items-center h-full pt-10 md:pt-0">
-        
-        {/* Left Content Area */}
-        <div className="w-full max-w-[540px] flex flex-col items-start text-left">
-          
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="inline-block border border-[var(--color-brand-maroon-royal)]/30 px-3 py-1 rounded-full mb-6 bg-white/50 backdrop-blur-md shadow-sm"
-          >
-            <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.15em] text-[var(--color-brand-maroon-deep)]">
-              Authentic Hyderabadi Dum Biryani
-            </span>
-          </motion.div>
-          
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-            className="font-serif text-[42px] md:text-[56px] lg:text-[62px] font-black text-[var(--color-brand-maroon-deep)] leading-[1.05] tracking-tight mb-4 drop-shadow-[0_2px_10px_rgba(248,238,219,0.8)]"
-          >
-            ROYAL FEASTS.<br />
-            <span className="text-[var(--color-brand-gold-royal)]">CRAFTED FRESH.</span>
-          </motion.h2>
-          
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="font-serif text-[20px] md:text-[24px] text-[var(--color-brand-text-dark)] italic mb-5 drop-shadow-[0_1px_5px_rgba(248,238,219,0.8)]"
-          >
-            Celebrate Every Meal
-          </motion.p>
-          
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-            className="text-[15px] md:text-[16px] text-[var(--color-brand-text-muted)] mb-8 leading-[1.6] font-medium max-w-[480px]"
-          >
-            From slow-cooked dum biryanis to family buckets, crispy snacks, refreshing chai and celebration catering — order royal flavours made for every craving.
-          </motion.p>
-          
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mt-2"
-          >
-            <button className="btn-primary w-full sm:w-auto !h-[50px] !px-8 text-[13px] !rounded-full uppercase tracking-widest border border-transparent hover:border-[var(--color-brand-maroon-deep)]/20 shadow-sm">
-              Order Online
-            </button>
-            <button className="btn-outline w-full sm:w-auto !h-[50px] !px-8 text-[13px] !rounded-full bg-white/60 hover:!bg-[var(--color-brand-maroon-royal)] hover:!text-white uppercase tracking-widest !border-[var(--color-brand-maroon-royal)]/40 hover:!border-[var(--color-brand-maroon-royal)] backdrop-blur-sm">
-              Explore Menu
-            </button>
-          </motion.div>
+      {/* Transparent Overlay Header matching exactly to the screenshot */}
+      <header className="absolute top-0 inset-x-0 z-50 flex items-center justify-between px-6 lg:px-16 py-6 text-white bg-transparent">
+        <div className="flex items-center gap-[2px] cursor-pointer">
+          <img src="/logo.png" alt="Antera Logo" className="h-24 md:h-32 lg:h-40 w-auto object-contain" />
         </div>
         
-      </div>
+        <nav className="hidden lg:flex items-center gap-8 text-[11px] font-bold tracking-widest uppercase text-white/90">
+          <a href="#home" className="hover:text-white transition-colors relative group">
+            HOME
+            <span className="absolute -bottom-2 left-0 w-full h-[1px] bg-white"></span>
+          </a>
+          <a href="#about" className="hover:text-white transition-colors">ABOUT</a>
+          <a href="#pages" className="hover:text-white transition-colors">PAGES</a>
+          <a href="#menu" className="hover:text-white transition-colors">MENU</a>
+          <a href="#contact" className="hover:text-white transition-colors">CONTACT</a>
+        </nav>
+      </header>
+
+      {/* The text has been removed so it doesn't overlap with the text already in the background images */}
     </section>
   );
 };

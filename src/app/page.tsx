@@ -1,22 +1,15 @@
-import { TopBar } from "@/components/TopBar";
-import { Header } from "@/components/Header";
+
+
 import { CartDrawer } from "@/components/CartDrawer";
 import { Hero } from "@/components/Hero";
-import { OrderYourWay } from "@/components/OrderYourWay";
-import { CategoryStrip } from "@/components/CategoryStrip";
-import { SignatureBiryanis } from "@/components/SignatureBiryanis";
-import { FeaturedBestSeller } from "@/components/FeaturedBestSeller";
-import { BucketBiryani } from "@/components/BucketBiryani";
-import { ExploreMenu } from "@/components/ExploreMenu";
-import { SnacksChai } from "@/components/SnacksChai";
-import { Combos } from "@/components/Combos";
-import { Catering } from "@/components/Catering";
-import { WhyChoose } from "@/components/WhyChoose";
-import { Reviews } from "@/components/Reviews";
-import { Desserts } from "@/components/Desserts";
-import { OffersBanner } from "@/components/OffersBanner";
+import { AboutSection } from "@/components/AboutSection";
+import { FoodsWeServe } from "@/components/FoodsWeServe";
+
 import { FoodGallery } from "@/components/FoodGallery";
+import { BestDishes } from "@/components/BestDishes";
+import { SushiDealsBanner } from "@/components/SushiDealsBanner";
 import { Footer } from "@/components/Footer";
+import { BookingSection } from "@/components/BookingSection";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Preloader } from "@/components/Preloader";
 
@@ -25,66 +18,34 @@ export default function Home() {
     <main className="min-h-screen bg-[var(--color-brand-cream-bg)] relative">
       <Preloader />
       <CartDrawer />
-      <TopBar />
-      <Header />
+
+
       
       {/* Hero handles its own load animation for better initial paint syncing */}
       <Hero />
       
       <FadeIn>
-        <OrderYourWay />
+        <AboutSection />
       </FadeIn>
+      
       <FadeIn delay={0.1}>
-        <CategoryStrip />
+        <FoodsWeServe />
       </FadeIn>
       
-      <div className="bg-white/80 backdrop-blur-md rounded-t-[40px] shadow-sm -mt-8 relative z-20 pb-10">
-        <FadeIn>
-          <SignatureBiryanis />
-        </FadeIn>
-        <FadeIn>
-          <FeaturedBestSeller />
-        </FadeIn>
-      </div>
-      
-      <FadeIn>
-        <BucketBiryani />
-      </FadeIn>
-      <FadeIn delay={0.1}>
-        <ExploreMenu />
-      </FadeIn>
-      
-      <div className="bg-white/80 backdrop-blur-md py-10">
-        <FadeIn>
-          <SnacksChai />
-        </FadeIn>
-        <FadeIn>
-          <Combos />
-        </FadeIn>
-      </div>
 
-      <FadeIn>
-        <Catering />
-      </FadeIn>
-      <FadeIn>
-        <WhyChoose />
-      </FadeIn>
-      <FadeIn delay={0.1}>
-        <Reviews />
-      </FadeIn>
-      <FadeIn>
-        <Desserts />
-      </FadeIn>
-      
-      <div className="bg-[var(--color-brand-cream-card)] pt-10 border-t border-[var(--color-brand-gold-soft)]/20">
-        <FadeIn>
-          <OffersBanner />
+      <div className="bg-white border-t border-[var(--color-brand-gold-soft)]/20">
+        <FadeIn delay={0.1}>
+          <SushiDealsBanner />
+        </FadeIn>
+        <FadeIn delay={0.1}>
+          <BestDishes />
         </FadeIn>
         <FadeIn delay={0.1}>
           <FoodGallery />
         </FadeIn>
       </div>
 
+      <BookingSection />
       <Footer />
       
       {/* Mobile Sticky Bottom Order Bar */}
